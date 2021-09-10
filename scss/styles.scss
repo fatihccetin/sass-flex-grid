@@ -48,7 +48,7 @@ img {
     border-bottom: 1px solid $primary-color; // cizgıyı olusturduk header kısmını ayıran
 
     .container {
-     @include flex-display(flex,center,space-between);
+        @include flex-display(flex, center, space-between);
 
         .logo {
             h1 {
@@ -91,9 +91,8 @@ img {
 
 .nav-header {
     .navbar {
-        @include flex-display(flex,center,space-between);
+        @include flex-display(flex, center, space-between);
 
-        
         .navbar-list {
             display: flex;
 
@@ -107,66 +106,59 @@ img {
                 -o-transition: 0.5s;
 
                 .dropdown {
-                    position: absolute; //kendınıkapsayanelemanınposıstıonrelativolmalıbackground-color: royalblue;
+                    position: absolute;
+                    //kendınıkapsayanelemanınposıstıonrelativolmalıbackground-color: royalblue;
                     width: 150%;
-                    background-color:lighten($secondary-color,10%);// baya guzel bır kullanım secondart-color a gore yuzde 10 daha acık bır renk verır
-                    left: 50%;
+                    background-color: lighten($secondary-color, 10%);
+                    //bayaguzelbırkullanımsecondart-coloragoreyuzde10dahaacıkbırrenkverırleft: 50%;
                     z-index: 10;
                     top: 12rem;
+
                     opacity: 0;
                     transition: all 0.5s;
-                    -webkit-transition: all 0.5s;
-                    -moz-transition: all 0.5s;
-                    -ms-transition: all 0.5s;
-                    -o-transition: all 0.5s;
 
-                    li {
+                    li: hover {
                         line-height: 4rem;
                     }
                 }
 
-                &:hover{
-
+                &:hover {
                     background-color: $primary-color;
 
-                    & .dropdown{
+                    & .dropdown {
                         opacity: 1;
-                        top:8rem;
+                        top: 8rem;
                     }
                 }
             }
 
-            a{
+            a {
                 padding: 0 2rem;
                 font-size: 1.6rem;
-                letter-spacing: 2px;//harfler arası boşluk
+                letter-spacing: 2px; //harfler arası boşluk
             }
 
-
-            i{
-                color:$light-color;
+            i {
+                color: $light-color;
                 font-size: 1.6rem;
                 margin-right: 1rem;
             }
         }
 
-        .search-area{
-            input[type="search"], button[type="submit"]{
+        .search-area {
+            input[type="search"],
+            button[type="submit"] {
                 border: none;
                 background-color: transparent;
                 color: $light-color;
-
             }
-            input[type="search"]{
+            input[type="search"] {
                 border-bottom: 1px solid $primary-color;
-                padding: .5rem;
+                padding: 0.5rem;
             }
-            button[type="submit"]{
+            button[type="submit"] {
                 margin-left: -5rem;
             }
         }
-
-
     }
-
 }

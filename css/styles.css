@@ -169,19 +169,13 @@ img {
   position: absolute;
   width: 150%;
   background-color: #2a2c37;
-  left: 50%;
   z-index: 10;
   top: 12rem;
   opacity: 0;
-  transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-}
-
-.nav-header .navbar .navbar-list li .dropdown li {
-  line-height: 4rem;
+  transition: all 0.5s;
+  li: hover;
+  li-line-height: 4rem;
 }
 
 .nav-header .navbar .navbar-list li:hover {
@@ -205,7 +199,8 @@ img {
   margin-right: 1rem;
 }
 
-.nav-header .navbar .search-area input[type="search"], .nav-header .navbar .search-area button[type="submit"] {
+.nav-header .navbar .search-area input[type="search"],
+.nav-header .navbar .search-area button[type="submit"] {
   border: none;
   background-color: transparent;
   color: #fefefe;
@@ -213,7 +208,7 @@ img {
 
 .nav-header .navbar .search-area input[type="search"] {
   border-bottom: 1px solid #E51515;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .nav-header .navbar .search-area button[type="submit"] {
