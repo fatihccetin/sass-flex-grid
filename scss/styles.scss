@@ -34,7 +34,7 @@ a{
     text-decoration: none; // linklerin altı cızılı olmaz
     text-transform: uppercase;//linklerin hepsi buyuk harf
     font-family: $primary-font;
-    //color:$light-color;
+    color:$light-color;
 }
 
 ul{
@@ -44,6 +44,8 @@ ul{
 img{
     width: 100%;
 }
+
+
 
 /* Top header*/
 
@@ -96,7 +98,47 @@ img{
     }
 }
 
+/* Nav header*/
 
+.nav-header{
+    .navbar{
+        display: flex; //serch yana gelırr
+        align-items:center;
+        justify-content: space-between;//flex yapısı ıcındekı elemanlar bırbırınden uzaklasıyor
+    
+        .navbar-list{
+            display: flex;
+
+            li{
+                line-height: 8rem;
+                position: relative;
+                transition: .5s;
+                -webkit-transition: .5s;
+                -moz-transition: .5s;
+                -ms-transition: .5s;
+                -o-transition: .5s;
+
+                .dropdown{
+                    position: absolute; //kendınıkapsayanelemanınposıstıonrelativolmalıbackground-color: royalblue;
+                    width: 150%;
+                    background-color: royalblue;
+                    left: 50%;
+                    z-index: 10;
+                    top: 12rem;
+                    opacity: 1;
+                    transition: all .5s;
+                    -webkit-transition: all .5s;
+                    -moz-transition: all .5s;
+                    -ms-transition: all .5s;
+                    -o-transition: all .5s;
+}
+}
+        }
+
+    }
+
+    
+}
 
 
 

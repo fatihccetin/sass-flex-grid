@@ -1,6 +1,48 @@
+@charset "UTF-8";
 /* fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Open+Sans:wght@300&display=swap");
 /* variable*/
+/*Utılıtıs clas  tek bır ıslevı olan claslar  html kodunda cagırılyor */
+.bg-dark {
+  background-color: #14151A;
+}
+
+.bg-light {
+  background-color: #fefefe;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.btn {
+  background-color: #fefefe;
+  color: #E51515;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  letter-spacing: 2px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  border-radius: 10%;
+}
+
+.btn:hover {
+  background-color: #E51515;
+  color: #fefefe;
+}
+
+.btn-primary {
+  background-color: #E51515;
+  color: #fefefe;
+}
+
+.btn-primary:hover {
+  background-color: #fefefe;
+  color: #E51515;
+}
+
 /* Genel ayarlar */
 *,
 *::after,
@@ -31,6 +73,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Changa", sans-serif;
+  color: #fefefe;
 }
 
 ul {
@@ -90,5 +133,49 @@ img {
 
 .top-header .container .login-area span {
   display: none;
+}
+
+/* Nav header*/
+.nav-header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-header .navbar .navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-header .navbar .navbar-list li {
+  line-height: 8rem;
+  position: relative;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.nav-header .navbar .navbar-list li .dropdown {
+  position: absolute;
+  width: 150%;
+  background-color: royalblue;
+  left: 50%;
+  z-index: 10;
+  top: 12rem;
+  opacity: 1;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -14,3 +14,26 @@ $date-color:#FFB320;
 $comment-color:#08ABBD;
 $gray-color:#9F9F9F;
 $light-color:#fefefe;
+
+/*Utılıtıs clas  tek bır ıslevı olan claslar  html kodunda cagırılyor */ 
+
+.bg{
+    &-dark{
+        background-color:$secondary-color;
+    }
+    &-light{
+        background-color: $light-color;
+    }
+}
+
+
+.ml{// margın leftler ıcın 
+
+    &-2{
+        margin-left :2rem; ;
+    }
+}
+
+
+
+
