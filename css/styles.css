@@ -120,11 +120,11 @@ img {
 
 .top-header .container .top-social-menu li a {
   font-size: 2rem;
-  transition: all .5s;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 .top-header .container .top-social-menu li:hover a {
@@ -157,25 +157,65 @@ img {
 .nav-header .navbar .navbar-list li {
   line-height: 8rem;
   position: relative;
-  transition: .5s;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .nav-header .navbar .navbar-list li .dropdown {
   position: absolute;
   width: 150%;
-  background-color: royalblue;
+  background-color: #2a2c37;
   left: 50%;
   z-index: 10;
   top: 12rem;
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.nav-header .navbar .navbar-list li .dropdown li {
+  line-height: 4rem;
+}
+
+.nav-header .navbar .navbar-list li:hover {
+  background-color: #E51515;
+}
+
+.nav-header .navbar .navbar-list li:hover .dropdown {
   opacity: 1;
-  transition: all .5s;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
+  top: 8rem;
+}
+
+.nav-header .navbar .navbar-list a {
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
+.nav-header .navbar .navbar-list i {
+  color: #fefefe;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+
+.nav-header .navbar .search-area input[type="search"], .nav-header .navbar .search-area button[type="submit"] {
+  border: none;
+  background-color: transparent;
+  color: #fefefe;
+}
+
+.nav-header .navbar .search-area input[type="search"] {
+  border-bottom: 1px solid #E51515;
+  padding: .5rem;
+}
+
+.nav-header .navbar .search-area button[type="submit"] {
+  margin-left: -5rem;
 }
 /*# sourceMappingURL=styles.css.map */
