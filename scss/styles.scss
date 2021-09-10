@@ -99,25 +99,28 @@ img {
             li {
                 line-height: 8rem;
                 position: relative;
-                transition: 0.5s;
-                -webkit-transition: 0.5s;
+               transition: 0.5s;
+               -webkit-transition: 0.5s;
                 -moz-transition: 0.5s;
-                -ms-transition: 0.5s;
-                -o-transition: 0.5s;
+                 -ms-transition: 0.5s;
+                 -o-transition: 0.5s;
 
                 .dropdown {
                     position: absolute;
                     //kendınıkapsayanelemanınposıstıonrelativolmalıbackground-color: royalblue;
                     width: 150%;
                     background-color: lighten($secondary-color, 10%);
-                    //bayaguzelbırkullanımsecondart-coloragoreyuzde10dahaacıkbırrenkverırleft: 50%;
+                    //bayaguzelbırkullanımsecondart-coloragoreyuzde10dahaacıkbırrenkverır
+                   // left: 50%;
                     z-index: 10;
                     top: 12rem;
-
                     opacity: 0;
-                    transition: all 0.5s;
+                   // transition: .5rem;
+                    
 
-                    li: hover {
+
+                    li:hover 
+{
                         line-height: 4rem;
                     }
                 }
