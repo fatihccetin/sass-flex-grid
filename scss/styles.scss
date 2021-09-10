@@ -1,0 +1,102 @@
+
+@import 'abstracts';
+@import 'components';
+
+/* Genel ayarlar */
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: $secondary-font;
+    color: $gray-color;
+    background-color: $light-color;
+}
+
+.container{
+    max-width: 114rem;
+    margin: 0 auto;// boşlukları ayarlar
+    width: 100%;  // sayfayı 1140 px gore ortalıcak yanı kösede bosluk olur 
+
+}
+
+a{
+    text-decoration: none; // linklerin altı cızılı olmaz
+    text-transform: uppercase;//linklerin hepsi buyuk harf
+    font-family: $primary-font;
+    //color:$light-color;
+}
+
+ul{
+    list-style: none;;
+}
+
+img{
+    width: 100%;
+}
+
+/* Top header*/
+
+
+.top-header{
+    border-bottom: 1px solid $primary-color; // cizgıyı olusturduk header kısmını ayıran
+    
+    .container{
+        display: flex;// ögeler yanyana geldi
+        align-items: center;
+        justify-content: space-between;
+
+        .logo{
+
+            h1{
+                font-size: 5rem;
+                font-family: $primary-font;
+                color: $primary-color;
+            }
+        }
+        .top-social-menu{
+            display: flex; //ögeler yanyana geldi sosyal medya elemanlar
+
+             li{
+                 margin: 0 1rem;
+                 padding: 1rem;
+
+                 a{
+                     font-size: 2rem;
+                     transition: all .5s;//uzerıne gelınce 5 sanıye sonra hover calısıyor 
+                     -webkit-transition: all .5s;
+                     -moz-transition: all .5s;
+                     -ms-transition: all .5s;
+                     -o-transition: all .5s;
+}
+
+                 &:hover a{
+                     color: $primary-color;
+                 }
+             }
+        }
+
+        .login-area{
+            span{
+                display: none;
+            }
+        }
+
+
+    }
+}
+
+
+
+
+
