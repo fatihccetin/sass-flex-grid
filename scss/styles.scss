@@ -48,9 +48,7 @@ img {
     border-bottom: 1px solid $primary-color; // cizgıyı olusturduk header kısmını ayıran
 
     .container {
-        display: flex; // ögeler yanyana geldi
-        align-items: center;
-        justify-content: space-between;
+     @include flex-display(flex,center,space-between);
 
         .logo {
             h1 {
@@ -93,10 +91,9 @@ img {
 
 .nav-header {
     .navbar {
-        display: flex; //serch yana gelırr
-        align-items: center;
-        justify-content: space-between; //flex yapısı ıcındekı elemanlar bırbırınden uzaklasıyor
+        @include flex-display(flex,center,space-between);
 
+        
         .navbar-list {
             display: flex;
 
